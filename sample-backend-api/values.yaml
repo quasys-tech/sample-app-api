@@ -1,0 +1,6 @@
+sampleapi:
+  labels:
+    env: dev
+  repository:
+    image: registry-quay-tools.apps.hub.sandbox2324.opentlc.com/cci/sample-backend-api
+    tag: v1
