@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  sample-api-1:
+    image: registry-quay-tools.apps.hub.sandbox2324.opentlc.com/quayadmin/cci/sample-backend-api:v1
+    restart: always
+    ports:
+      - '3000:3000'
