@@ -14,6 +14,7 @@ spec:
       default: ./Dockerfile
     - name: IMAGE_PUSH_SECRET_NAME
       description: Kubernetes secrets contain image push username and password
+      default: quaysec
   workspaces:
     - name: source
   steps:
