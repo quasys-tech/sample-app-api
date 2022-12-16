@@ -1,0 +1,6 @@
+apiVersion: v2
+appVersion: 0.0.1
+description: A helm chart for sample-backend-api
+name: sample-backend-api
+type: application
+version: 0.1.0
