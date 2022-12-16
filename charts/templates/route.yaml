@@ -3,42 +3,8 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: sample-backend-api-sample-api-1
   namespace: cci
-  uid: ae8c3166-41b4-41e6-9029-f04090144076
-  resourceVersion: '3538869'
-  creationTimestamp: '2022-12-15T13:55:44Z'
   labels:
     app.kubernetes.io/managed-by: Helm
-  annotations:
-    openshift.io/host.generated: 'true'
-  managedFields:
-    - manager: kubectl-expose
-      operation: Update
-      apiVersion: route.openshift.io/v1
-      time: '2022-12-15T13:55:44Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:metadata':
-          'f:labels':
-            .: {}
-            'f:app.kubernetes.io/managed-by': {}
-        'f:spec':
-          'f:port':
-            .: {}
-            'f:targetPort': {}
-          'f:to':
-            'f:kind': {}
-            'f:name': {}
-            'f:weight': {}
-          'f:wildcardPolicy': {}
-    - manager: openshift-router
-      operation: Update
-      apiVersion: route.openshift.io/v1
-      time: '2022-12-15T13:55:44Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:status':
-          'f:ingress': {}
-      subresource: status
 spec:
   host: sample-backend-api-sample-api-1-cci.apps.hub.sandbox2324.opentlc.com
   to:
@@ -48,13 +14,3 @@ spec:
   port:
     targetPort: 3000
   wildcardPolicy: None
-status:
-  ingress:
-    - host: sample-backend-api-sample-api-1-cci.apps.hub.sandbox2324.opentlc.com
-      routerName: default
-      conditions:
-        - type: Admitted
-          status: 'True'
-          lastTransitionTime: '2022-12-15T13:55:44Z'
-      wildcardPolicy: None
-      routerCanonicalHostname: router-default.apps.hub.sandbox2324.opentlc.com
