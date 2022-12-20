@@ -6,7 +6,6 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: Helm
 spec:
-  host: sample-backend-api-sample-api-1-cci.apps.hub.sandbox2324.opentlc.com
   to:
     kind: Service
     name: sample-backend-api-sample-api-1
