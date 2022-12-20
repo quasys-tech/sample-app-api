@@ -23,4 +23,6 @@ spec:
           ports:
             - name: sample-api-1
               containerPort: 3000
+      imagePullSecrets:
+        - quaysec
 
