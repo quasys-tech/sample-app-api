@@ -6,6 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: Helm
 spec:
+  tls:
+    termination: Edge
   to:
     kind: Service
     name: sample-backend-api-sample-api-1
